@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+App	src/App.js	/^function App() {$/;"	f
+Login	src/view/login/index.js	/^function Login() {$/;"	f
+apiKey	src/config/firebase.js	/^  apiKey: "AIzaSyDLkvzM6eDylYsChBCZGtj24XSEKX-yw7k",$/;"	p	class:const
+appId	src/config/firebase.js	/^  appId: "1:536738337539:web:511b4717743ea6d8c34f36"$/;"	p	class:const
+authDomain	src/config/firebase.js	/^  authDomain: "eventos-533d8.firebaseapp.com",$/;"	p	class:const
+cadastrar	src/view/novoUsuario/index.js	/^  function cadastrar() {$/;"	f
+logar	src/view/login/index.js	/^  function logar() {$/;"	f	function:Login
+messagingSenderId	src/config/firebase.js	/^  messagingSenderId: "536738337539",$/;"	p	class:const
+projectId	src/config/firebase.js	/^  projectId: "eventos-533d8",$/;"	p	class:const
+storageBucket	src/config/firebase.js	/^  storageBucket: "eventos-533d8.appspot.com",$/;"	p	class:const

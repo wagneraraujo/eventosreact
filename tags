@@ -16,3 +16,6 @@ logar	src/view/login/index.js	/^  function logar() {$/;"	f	function:Login
 messagingSenderId	src/config/firebase.js	/^  messagingSenderId: "536738337539",$/;"	p	class:const
 projectId	src/config/firebase.js	/^  projectId: "eventos-533d8",$/;"	p	class:const
 storageBucket	src/config/firebase.js	/^  storageBucket: "eventos-533d8.appspot.com",$/;"	p	class:const
+usuarioEmail	src/store/usuarioReducer.js	/^  usuarioEmail: "",$/;"	p	class:const
+usuarioLogado	src/store/usuarioReducer.js	/^  usuarioLogado: 0$/;"	p	class:const
+usuarioReducer	src/store/usuarioReducer.js	/^function usuarioReducer(state = INITIAL_STATE, action) {$/;"	f

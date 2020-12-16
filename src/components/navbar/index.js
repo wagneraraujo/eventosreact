@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 
 function NavbarSite() {
+  const dispatch = useDispatch();
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -26,16 +28,44 @@ function NavbarSite() {
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="login">
-                Login
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="novousuario">
-                Cadastro
-              </Link>
-            </li>
+            {useSelector(state => state.usuarioLogado) > 0 ? (
+              <>
+                <li className="nav-item">
+                  <Link className="nav-link" to=""></Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="">
+                    Criar Evento
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="">
+                    Meus Eventos
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link"
+                    onClick={() => dispatch({ type: "LOG_OUT" })}
+                  >
+                    Sair
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li className="nav-item">
+                  <Link className="nav-link" to="login">
+                    Login
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="novousuario">
+                    Cadastro
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
           <form className="d-flex">
             <input
